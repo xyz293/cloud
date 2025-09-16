@@ -24,8 +24,9 @@ const User = () => {
             { key: '1', label: '企业' ,onClick:()=>{
                 navigate('/user/company');
             }},
-            { key: '2', label: '教师' },
-            { key: '3', label: '学生' },
+            { key: '2', label: '教师' ,onClick: ()=>{
+                navigate('/user/college');
+            } },
           ]}
         />
       </Sider>

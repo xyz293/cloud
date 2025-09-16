@@ -5,6 +5,8 @@ const useStore = create(
         (set) => ({
             token: '',
             setToken: (token) => set({token}),
+            id:'',
+            setId:(id) => set({id}),
         }),
         {
             name: 'user',
