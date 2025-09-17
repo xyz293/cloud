@@ -10,9 +10,14 @@ const Job = lazy(()=>import('../page/user/company/job'));
 const Company_detail = lazy(()=>import('../page/user/company/company_detail'));
 const Department = lazy(()=>import('../page/user/company/department'));
 const MyApplication = lazy(()=>import('../page/user/company/my_application'));
-const College = lazy(()=>import('../page/user/college/index'));
+const University = lazy(()=>import('../page/user/college/index'));
 const First_page = lazy(()=>import('../page/user/college/firsrt_page'));
 const Class = lazy(()=>import('../page/user/college/Class'));
+const Detail = lazy(()=>import('../page/user/college/detail'));
+const Main = lazy(()=>import('../page/user/college/various/main'));
+const College_course = lazy(()=>import('../page/user/college/various/course'));
+const College = lazy(()=>import('../page/user/college/various/college'));
+const CourseDetail = lazy(()=>import('../page/user/college/various/course_detail'));
 const router =[
     {
         path:'/',
@@ -113,7 +118,7 @@ const router =[
                     <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
                         <Spin/>
                     </div>}>
-                        <College/>
+                        <University/>
                     </Suspense>
                 ),
                 children:[
@@ -136,6 +141,58 @@ const router =[
                                 <Class/>
                             </Suspense>
                         )
+                    },
+                    {
+                        path:'detail/:id',
+                        element:(
+                            <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
+                                <Spin/>
+                            </div>}>
+                                <Detail/>
+                            </Suspense>
+                        ),
+                        children:[
+                            {
+                                path:'main',
+                                element:(
+                                    <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
+                                        <Spin/>
+                                    </div>}>
+                                        <Main/>
+                                    </Suspense>
+                                )
+                            },
+                            {
+                                path:'course',
+                                element:(
+                                    <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
+                                        <Spin/>
+                                    </div>}>
+                                        <College_course/>
+                                    </Suspense>
+                                )
+                            },
+                            {
+                                path:'college',
+                                element:(
+                                    <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
+                                        <Spin/>
+                                    </div>}>
+                                        <College/>
+                                    </Suspense>
+                                )   
+                            },
+                            {
+                                path:'course/:id',
+                                element:(
+                                    <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
+                                        <Spin/>
+                                    </div>}>
+                                        <CourseDetail/>
+                                    </Suspense>
+                                )
+                            }
+                        ]
                     }
                 ]
             }

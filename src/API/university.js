@@ -32,3 +32,19 @@ export const Address = (key) => {
         }
     })
 }
+export const detail = (id) => {
+    return request({
+        url: `/university/university/${id}`,
+        method: 'get',
+    })
+}
+export  const getCollege =(id)=>{
+    return request({
+        url: '/college/detail',
+        method: 'get',
+        params:{
+            id:id
+        }
+    })
+}
+

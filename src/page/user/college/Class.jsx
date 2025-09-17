@@ -4,9 +4,10 @@ import { getProvinceList } from '../../../API/province';
 import { type, Address } from '../../../API/university';
 import { Button, Collapse, Avatar, Space } from 'antd';
 import { getSchoolCategory } from '../../../API/school_category';
-
+import { useNavigate } from 'react-router-dom';
 const Class = () => {
   const { Panel } = Collapse;
+   const navigate = useNavigate();
   const { list } = useContext(contentContext);
   const [college, setCollege] = useState(list);
   const [lists, setLists] = useState([]);
@@ -65,7 +66,7 @@ const Class = () => {
 
       {/* 学校列表 */}
       <div style={{display:'flex',justifyContent:'center'}}>
-        <div style={{ display: 'flex', flexDirection: 'column', marginTop: '20px', padding: '10px', gap: '20px' }}>
+        <div style={{display:'flex',flexWrap: 'wrap', gap: '20px',width:'1000px'}}>
         {college.length === 0 ? (
           <div
             style={{
@@ -81,7 +82,7 @@ const Class = () => {
           </div>
         ) : (
           college.map(item=>(
-      <div key={item.id} style={{display:'flex',width :'600px',justifyContent:'space-between',padding:'20px',border: '1px solid #eee',      // 边框
+      <div key={item.id} style={{display:'flex',width :'400px',justifyContent:'space-between',padding:'20px',border: '1px solid #eee',      // 边框
                 borderRadius: '12px',           // 圆角
                 boxShadow: '0 4px 8px rgba(0,0,0,0.05)', // 阴影
                 backgroundColor: '#fff',}}>
@@ -93,7 +94,7 @@ const Class = () => {
       </div>
        <div style={{display:'flex',flexDirection: 'column',alignItems:'flex-end',gap:'40px',marginTop:'70px'}}>
 
-         <Button type="primary">查看详情</Button>
+         <Button type="primary" onClick={()=>navigate(`/user/college/detail/${item.id}`)}>查看详情</Button>
        <div>
           学校网址：<a href={item.website} target="_blank" rel="noopener noreferrer">
           {item.website}
