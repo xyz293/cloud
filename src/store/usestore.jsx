@@ -7,6 +7,8 @@ const useStore = create(
             setToken: (token) => set({token}),
             id:'',
             setId:(id) => set({id}),
+            username:'',
+            setUsername:(username) => set({username}),
         }),
         {
             name: 'user',

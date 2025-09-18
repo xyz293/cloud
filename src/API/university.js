@@ -47,4 +47,24 @@ export  const getCollege =(id)=>{
         }
     })
 }
+export const getCollege_expert =(id,school_id)=>{
+    return request({
+        url: '/expert/college',
+        method: 'get',
+        params:{
+            id:id,
+            school_id:school_id
+        }
+    })
+}
+export const getCollege_course = (id,us_id) => {
+    return request({
+        url: '/course/college_course',
+        method: 'get',
+        params:{
+            id:id,
+            usid:us_id,
+        }
+    })
+}
 

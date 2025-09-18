@@ -46,3 +46,15 @@ export const getCourseDetail = (id) => {
         }
     })
 }
+export const postComment = (id,content,course_id,username) => {
+    return request({
+        url:'/comment/comment',
+        method:'post',
+        data:{
+            user_id:id,
+            content:content,
+            course_id:course_id,
+            username:username
+        }
+    })
+}

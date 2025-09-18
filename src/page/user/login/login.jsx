@@ -5,7 +5,7 @@ import useStore from '../../../store/usestore'
 import {login} from '../../../API/user'
 const Login = () => {
     const navigate = useNavigate();
-    const {setToken,setId} = useStore();
+    const {setToken,setId,setUsername} = useStore();
     const [user,setUser] = useState({
         username:'',
         password:'',
@@ -31,6 +31,7 @@ const Login = () => {
                 }
                 setToken(res.data.token);
                 setId(res.data.data.id);
+                setUsername(res.data.data.nickname);
             }
             else {
               alert(res.data.msg);

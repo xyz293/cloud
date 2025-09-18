@@ -1,22 +1,26 @@
 import { detail } from '../../../API/university';
 import { useEffect, useMemo } from 'react';
 import { Button } from 'antd';
-import { useParams, Outlet, useNavigate } from 'react-router-dom';
+import { useParams, Outlet, useNavigate,useLocation } from 'react-router-dom';
 // eslint-disable-next-line no-unused-vars
 import { departmentContext } from '../../../ulits/content';
 
 const Detail = () => {
+    const location = useLocation();
   const { id } = useParams();
   const navigate = useNavigate();
 
   const contextValue = useMemo(() => id, [id]);
 
   useEffect(() => {
-    navigate('main');
+    if (location.pathname === `/user/college/detail/${id}`) {
+      navigate('main');
+    }
+
     detail(id).then((res) => {
       console.log('学校详情', res);
     });
-  }, [id]);
+  }, []);
 
 
   const navItems = [

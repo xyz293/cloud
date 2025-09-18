@@ -34,9 +34,9 @@ const FirstPage = () => {
           搜索
         </Button>
       </Space>
-    <div style={{display:'flex',flexWrap: 'wrap', gap: '40px',width:'1400px'}}>
+    <div style={{display:'flex',flexWrap: 'wrap', gap: '40px',width:'100%'}}>
        {college.map(item=>(
-      <div key={item.id} style={{display:'flex',width :'300px',justifyContent:'space-between',padding:'20px',border: '1px solid #eee',      // 边框
+      <div key={item.id} style={{display:'flex',width :'400px',justifyContent:'space-between',padding:'20px',border: '1px solid #eee',      // 边框
                 borderRadius: '12px',           // 圆角
                 boxShadow: '0 4px 8px rgba(0,0,0,0.05)', // 阴影
                 backgroundColor: '#fff',}}>

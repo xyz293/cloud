@@ -58,9 +58,9 @@ const Department = () => {
       <div
         style={{
           display: 'flex',
-          flexWrap: 'wrap',
+           flexDirection: 'column',
           gap: '30px',
-          width: '100%',
+          width: '650px',
           maxWidth: '1300px',
           margin: '0 auto',
         }}
@@ -69,9 +69,8 @@ const Department = () => {
           <div
             key={item.id}
             style={{
-              flex: '1 1 calc(33% - 30px)',
-              minWidth: '280px',
-              maxWidth: '400px',
+              width: '100%',
+              height: '100%',
               display: 'flex',
               flexDirection: 'column',
               gap: '15px',
@@ -101,7 +100,12 @@ const Department = () => {
               </p>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ color: '#999' }}>开设学院：{item.college_name}</span>
-                <Button type="link" onClick={()=>{navigate(`/user/college/detail/${id}/course/${item.id}`)}}>详情</Button>
+              <Button
+  type="link"
+  onClick={() => navigate(`/user/college/detail/${id}/course_detail/${item.id}`)}
+>
+  详情
+</Button>
               </div>
             </div>
           </div>

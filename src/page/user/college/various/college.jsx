@@ -2,13 +2,14 @@ import { getCollege } from '../../../../API/university'
 import { useContext, useEffect, useState } from 'react'
 import { Button } from 'antd'
 import { departmentContext } from '../../../../ulits/content'
-
+import { useNavigate } from 'react-router-dom';
 const College = () => {
   const id = useContext(departmentContext);
   const [college, setCollege] = useState([])
-
+  const navigate = useNavigate();
   const show = async () => {
     const res = await getCollege(id)
+    console.log(res)
     setCollege(res.data.data)
   }
 
@@ -57,7 +58,7 @@ const College = () => {
               <div><strong>学院地址:</strong> {item.address}</div>
               <div><strong>联系电话:</strong> {item.phone}</div>
               <div>
-                <Button type='primary'>获取详情</Button>
+                <Button type='primary' onClick={() => navigate(`/user/college/detail/${id}/college_detail/${item.id}`)}>获取详情</Button>
               </div>
             </div>
           </div>

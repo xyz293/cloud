@@ -66,7 +66,7 @@ const Class = () => {
 
       {/* 学校列表 */}
       <div style={{display:'flex',justifyContent:'center'}}>
-        <div style={{display:'flex',flexWrap: 'wrap', gap: '20px',width:'1000px'}}>
+        <div style={{display:'flex',flexWrap: 'wrap', gap: '20px',width:'900px'}}>
         {college.length === 0 ? (
           <div
             style={{

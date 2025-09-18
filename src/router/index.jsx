@@ -15,9 +15,10 @@ const First_page = lazy(()=>import('../page/user/college/firsrt_page'));
 const Class = lazy(()=>import('../page/user/college/Class'));
 const Detail = lazy(()=>import('../page/user/college/detail'));
 const Main = lazy(()=>import('../page/user/college/various/main'));
-const College_course = lazy(()=>import('../page/user/college/various/course'));
+const College_course = lazy(()=>import('../page/user/college/various/course_university'));
 const College = lazy(()=>import('../page/user/college/various/college'));
 const CourseDetail = lazy(()=>import('../page/user/college/various/course_detail'));
+const CollegeCourse = lazy(()=>import('../page/user/college/various/college_detail'));
 const router =[
     {
         path:'/',
@@ -183,7 +184,7 @@ const router =[
                                 )   
                             },
                             {
-                                path:'course/:id',
+                                path:'course_detail/:id',
                                 element:(
                                     <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
                                         <Spin/>
@@ -191,7 +192,17 @@ const router =[
                                         <CourseDetail/>
                                     </Suspense>
                                 )
-                            }
+                            },
+                            {
+                                path:'college_detail/:id',
+                                element:(
+                                    <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
+                                        <Spin/>
+                                    </div>}>
+                                        <CollegeCourse/>
+                                    </Suspense>
+                                )
+                            },
                         ]
                     }
                 ]
