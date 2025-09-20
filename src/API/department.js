@@ -14,7 +14,7 @@ export const getDepartmentByCompanyId = (id,companyid) => {
         method: 'get',
         params:{
             id:id,
-            companyid:companyid
+            company_id:companyid
         }
     })
 }

@@ -9,6 +9,12 @@ const useStore = create(
             setId:(id) => set({id}),
             username:'',
             setUsername:(username) => set({username}),
+            userid:'',
+            setUserid:(userid) => set({userid}),
+            college:'',
+            setCollege:(college) => set({college}),
+            university:'',
+            setUniversity:(university) => set({university}),
         }),
         {
             name: 'user',

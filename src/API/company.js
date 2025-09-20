@@ -25,7 +25,10 @@ export const Search = (data) => {
 }
 export const getCompanyDetail = (id) => {
     return request({
-        url: `/company/getCompanyDetailById/${id}`,
+        url: '/company/detail',
         method: 'get',
+        params:{
+            id:id
+        }
     })
 }

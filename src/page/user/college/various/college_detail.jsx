@@ -14,7 +14,7 @@ const CollegeCourse = () => {
   const { Panel } = Collapse;
 
   const show = async () => {
-    const res = await getCollege_expert(college_id, university_id);
+    const res = await getCollege_expert(university_id, college_id);
     setExpert(res.data.data);
     const res1 = await getCollege_course(college_id, university_id);
     setCourse(res1.data.data);

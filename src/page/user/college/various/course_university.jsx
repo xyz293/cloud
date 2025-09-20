@@ -4,19 +4,28 @@ import { useEffect, useState, useContext } from 'react';
 import { getCourse,search,tagtype} from '../../../../API/course';
 import { departmentContext } from '../../../../ulits/content';
 import { useNavigate } from 'react-router-dom';
+import {postMyCourse} from '../../../../API/course'
+import {getUserid} from '../../../../ulits/tool'
 const Department = () => {
   const { Panel } = Collapse;
   const id = useContext(departmentContext);
   const [tag, setTag] = useState([]);
   const [course, setCourse] = useState([]);
   const navigate = useNavigate();
-
   const show = async () => {
     const res = await getCourse(id);
     setCourse(res.data.data);
     const res1 = await getTag();
     setTag(res1.data.data);
   };
+  const user_id = getUserid();
+  const select = async (user_id, name, image, code, type, university_id, college_id, state, description, college_name) => {
+    const res = await postMyCourse(user_id, name, image, code, type, university_id, college_id, state, description, college_name);
+    console.log(res);
+     if(res.data.code ==200){
+      alert('加入成功');
+     }
+  }
   const handleTag = async (key) => {
     const res = await tagtype(key, id);
     console.log(res)
@@ -98,14 +107,24 @@ const Department = () => {
               <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>
                 课程介绍：{item.description || '暂无介绍'}
               </p>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ color: '#999' }}>开设学院：{item.college_name}</span>
-              <Button
+              <div style={{ display: 'flex', justifyContent: 'space-between'}}>
+                <div style={{display:'flex',gap:'20px',justifyContent:'flex-start'}}>
+                  <span style={{ color: '#999' }}>开设学院：{item.college_name}</span>
+                  </div>
+                <div style={{display:'flex',gap:'20px',justifyContent:'flex-end'}}>
+                     <Button
   type="link"
   onClick={() => navigate(`/user/college/detail/${id}/course_detail/${item.id}`)}
 >
   详情
 </Button>
+ <Button
+  type="link"
+  onClick={() => select(user_id, item.name, item.image, item.code, item.type, item.university_id, item.college_id, item.state, item.description, item.college_name)}
+>
+  加入课程
+</Button>
+                  </div>
               </div>
             </div>
           </div>

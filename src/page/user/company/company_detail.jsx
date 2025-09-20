@@ -13,6 +13,7 @@ const Company_detail = () => {
     const show = async () => {
         const res = await getCompanyDetail(id);
         setCompany(res.data.data);
+        console.log(res);
         const res1 = await getDepartment(id);
         setDepartment(res1.data.data);
         console.log(res1);

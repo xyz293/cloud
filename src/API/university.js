@@ -16,10 +16,10 @@ export const search =(data)=>{
 }
 export const type =(type)=>{
     return request({
-        url: '/university/type',
+        url: '/university/tag',
         method: 'get',
         params:{
-            type:type
+            tag:type
         }
     })
 }
@@ -28,7 +28,7 @@ export const Address = (key) => {
         url: '/university/address',
         method: 'get',
         params:{
-          keyword:key
+          address:key
         }
     })
 }
@@ -53,7 +53,7 @@ export const getCollege_expert =(id,school_id)=>{
         method: 'get',
         params:{
             id:id,
-            school_id:school_id
+            department_id:school_id
         }
     })
 }

@@ -19,6 +19,8 @@ const College_course = lazy(()=>import('../page/user/college/various/course_univ
 const College = lazy(()=>import('../page/user/college/various/college'));
 const CourseDetail = lazy(()=>import('../page/user/college/various/course_detail'));
 const CollegeCourse = lazy(()=>import('../page/user/college/various/college_detail'));
+const MyCourse = lazy(()=>import('../page/user/college/various/my_course'));
+const Achievement = lazy(()=>import('../page/user/college/various/achievement'));
 const router =[
     {
         path:'/',
@@ -134,6 +136,16 @@ const router =[
                         )
                     },
                     {
+                        path:'my_course',
+                        element:(
+                            <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
+                                <Spin/>
+                            </div>}>
+                                <MyCourse/>
+                            </Suspense>
+                        )
+                    },
+                    {
                         path:'class',
                         element:(
                             <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
@@ -200,6 +212,16 @@ const router =[
                                         <Spin/>
                                     </div>}>
                                         <CollegeCourse/>
+                                    </Suspense>
+                                )
+                            },
+                            {
+                                path:'achievement',
+                                element:(
+                                    <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
+                                        <Spin/>
+                                    </div>}>
+                                        <Achievement/>
                                     </Suspense>
                                 )
                             },

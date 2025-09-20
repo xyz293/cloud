@@ -27,7 +27,7 @@ const Detail = () => {
     { key: 'main', label: '首页中心', path: 'main' },
     { key: 'college', label: '学院中心', path: 'college' },
     { key: 'course', label: '课程中心', path: 'course' },
-    { key: 'result', label: '成果展示', path: 'result' },
+    { key: 'achievement', label: '学校成就', path: 'achievement' },
   ];
 
   return (
