@@ -9,7 +9,7 @@ const { Title } = Typography;
 
 const Application = ({ info,setisshow }) => {
 
-    const chunks =1024
+    const chunks =1024*1024
     const [user,setUser] = useState({
        job_id:info.job_id,
        user_id:1,
@@ -51,15 +51,15 @@ const Application = ({ info,setisshow }) => {
           return spark.end()
     }
     const load =async (file,hash)=>{
-        file.forEach(async (item,index) => {
-           const formData = new FormData()
-           formData.append('totalChunks',file.length)
-           formData.append('index',index)
-           formData.append('hash',hash)
-           formData.append('file',item)
-          const res = await chuncks(formData)
-          console.log(res)
-        })
+       for(let i=0;i<file.length;i++){
+         let item =file[i]
+        const formData = new FormData();
+        formData.append('totalChunks', file.length);
+      formData.append('index', i);
+      formData.append('hash', hash);
+      formData.append('file', item);
+         await chuncks(formData)
+       }
     }
     const Merge =async (hash,fileName,totalChunks)=>{
           const res = await merge({

@@ -2,8 +2,8 @@ import { useParams } from 'react-router-dom';
 import { getDepartmentByCompanyId } from '../../../API/department';
 import { getDepartment_job, searchJob_department } from '../../../API/job';
 import { useEffect, useState } from 'react';
-import { Button, Input, Card, Typography, Space } from 'antd';
-
+import { Button, Input, Card, Typography, Space ,Modal} from 'antd';
+import Application from './application';
 const { Title, Paragraph, Text } = Typography;
 
 const Department = () => {
@@ -87,7 +87,9 @@ const Department = () => {
           <Text strong>管理人：</Text> {department.manager || '暂无'}
         </Paragraph>
       </Card>
-
+       <div>
+       
+       </div>
       {/* 岗位列表 */}
       <div
         style={{
