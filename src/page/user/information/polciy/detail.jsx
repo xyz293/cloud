@@ -1,14 +1,29 @@
 import { useParams } from 'react-router-dom';
-import { getPolicyDetail, getComments ,likeCount} from '../../../../API/policy';
+import { getPolicyDetail, getComments ,likeCount,addComment} from '../../../../API/policy';
 import { useEffect, useState } from 'react';
 import { Avatar, Button, Input, Spin, Divider } from 'antd';
 import { LikeOutlined } from '@ant-design/icons';
-
+import {getUsername} from '../../../../ulits/tool'
 const PolicyDetail = () => {
   const { id } = useParams();
+  const name = getUsername();
   const [policy, setPolicy] = useState({});
   const [comments, setComments] = useState([]);
+  const [input,setInput] = useState('');
   const [loading, setLoading] = useState(true);
+  const post =async (policy_id,user_name,content) => {
+    const res = await addComment(policy_id,user_name,content);
+    console.log(res);
+    if(res?.data?.code === 200){
+      setInput('');
+      setComments([...comments,{
+        policy_id:policy_id,
+        user_name:user_name,
+        content:content,
+        like_count:0,
+      }])
+    }
+  }
    const like = async (id,policyid) => {
     const res = await likeCount(id, policyid);
     console.log(res);
@@ -67,8 +82,8 @@ const PolicyDetail = () => {
       <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
         <h3>评论区</h3>
         <div style={{ display: 'flex', gap: '10px' }}>
-          <Input placeholder="请输入评论..." style={{ flex: 1 }} />
-          <Button type="primary">发表评论</Button>
+          <Input placeholder="请输入评论..." style={{ flex: 1 }}  value={input} onChange={e=>setInput(e.target.value)}/>
+          <Button type="primary" onClick={()=>post(id,name,input)}>发表评论</Button>
         </div>
 
         {comments.length > 0 ? (

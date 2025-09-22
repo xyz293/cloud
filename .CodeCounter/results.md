@@ -1,34 +1,37 @@
 # Summary
 
-Date : 2025-09-20 20:52:48
+Date : 2025-09-22 20:13:12
 
 Directory : ./src
 
-Total : 45 files,  2568 codes, 8 comments, 129 blanks, all 2705 lines, 0.31% comment rate
+Total : 55 files,  3392 codes, 8 comments, 161 blanks, all 3561 lines, 0.24% comment rate
 
 [details](details.md)
 
 ## Languages
 | language | files | code | comment | blank | total | comment rate |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: |
-| JavaScript JSX | 28 | 2,132 | 2 | 124 | 2,258 | 0.09% |
-| JavaScript | 16 | 435 | 6 | 5 | 446 | 1.36% |
+| JavaScript JSX | 35 | 2,800 | 2 | 154 | 2,956 | 0.07% |
+| JavaScript | 19 | 591 | 6 | 7 | 604 | 1.01% |
 | XML | 1 | 1 | 0 | 0 | 1 | 0.00% |
 
 ## Directories
 | path | files | code | comment | blank | total | comment rate |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: |
-| . | 45 | 2,568 | 8 | 129 | 2,705 | 0.31% |
-| API | 13 | 375 | 0 | 2 | 377 | 0.00% |
+| . | 55 | 3,392 | 8 | 161 | 3,561 | 0.24% |
+| API | 16 | 530 | 0 | 4 | 534 | 0.00% |
 | assets | 1 | 1 | 0 | 0 | 1 | 0.00% |
-| page | 23 | 1,852 | 2 | 119 | 1,973 | 0.11% |
-| page\user | 23 | 1,852 | 2 | 119 | 1,973 | 0.11% |
+| page | 30 | 2,452 | 2 | 149 | 2,603 | 0.08% |
+| page\user | 30 | 2,452 | 2 | 149 | 2,603 | 0.08% |
 | page\user\college | 12 | 978 | 2 | 65 | 1,045 | 0.20% |
 | page\user\college\various | 7 | 583 | 0 | 35 | 618 | 0.00% |
-| page\user\company | 7 | 667 | 0 | 49 | 716 | 0.00% |
+| page\user\company | 7 | 670 | 0 | 48 | 718 | 0.00% |
+| page\user\information | 7 | 591 | 0 | 31 | 622 | 0.00% |
+| page\user\information\polciy | 2 | 238 | 0 | 16 | 254 | 0.00% |
+| page\user\information\product | 4 | 327 | 0 | 15 | 342 | 0.00% |
 | page\user\login | 3 | 157 | 0 | 1 | 158 | 0.00% |
-| router | 1 | 234 | 0 | 1 | 235 | 0.00% |
+| router | 1 | 302 | 0 | 1 | 303 | 0.00% |
 | store | 1 | 24 | 0 | 0 | 24 | 0.00% |
-| ulits | 4 | 63 | 6 | 3 | 72 | 8.70% |
+| ulits | 4 | 64 | 6 | 3 | 73 | 8.57% |
 
 [details](details.md)

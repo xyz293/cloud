@@ -42,3 +42,15 @@ export const likeCount = (id,policy_id) => {
         }
     })
 }
+export const addComment = (policy_id,user_name,content) => {
+    return request({
+        url: '/policy/addcomment',
+        method: 'post',
+        data:{
+            policy_id:policy_id,
+            user_name:user_name,
+            content:content,
+            like_count:0
+        }
+    })
+}

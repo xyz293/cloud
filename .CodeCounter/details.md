@@ -1,10 +1,10 @@
 # Details
 
-Date : 2025-09-20 20:52:48
+Date : 2025-09-22 20:13:12
 
 Directory : ./src
 
-Total : 45 files,  2568 codes, 8 comments, 129 blanks, all 2705 lines, 0.31% comment rate
+Total : 55 files,  3392 codes, 8 comments, 161 blanks, all 3561 lines, 0.24% comment rate
 
 [summary](results.md)
 
@@ -17,7 +17,10 @@ Total : 45 files,  2568 codes, 8 comments, 129 blanks, all 2705 lines, 0.31% com
 | [API\company_tag.js](../src\API\company_tag.js) | JavaScript | 7 | 0 | 0 | 7 | 0.00% |
 | [API\course.js](../src\API\course.js) | JavaScript | 87 | 0 | 0 | 87 | 0.00% |
 | [API\department.js](../src\API\department.js) | JavaScript | 20 | 0 | 0 | 20 | 0.00% |
+| [API\information_tags.js](../src\API\information_tags.js) | JavaScript | 7 | 0 | 0 | 7 | 0.00% |
 | [API\job.js](../src\API\job.js) | JavaScript | 38 | 0 | 0 | 38 | 0.00% |
+| [API\policy.js](../src\API\policy.js) | JavaScript | 56 | 0 | 1 | 57 | 0.00% |
+| [API\product.js](../src\API\product.js) | JavaScript | 92 | 0 | 1 | 93 | 0.00% |
 | [API\province.js](../src\API\province.js) | JavaScript | 7 | 0 | 0 | 7 | 0.00% |
 | [API\school_category.js](../src\API\school_category.js) | JavaScript | 7 | 0 | 0 | 7 | 0.00% |
 | [API\university.js](../src\API\university.js) | JavaScript | 69 | 0 | 2 | 71 | 0.00% |
@@ -42,19 +45,26 @@ Total : 45 files,  2568 codes, 8 comments, 129 blanks, all 2705 lines, 0.31% com
 | [page\user\company\application.jsx](../src\page\user\company\application.jsx) | JavaScript JSX | 175 | 0 | 9 | 184 | 0.00% |
 | [page\user\company\company_detail.jsx](../src\page\user\company\company_detail.jsx) | JavaScript JSX | 84 | 0 | 7 | 91 | 0.00% |
 | [page\user\company\companylist.jsx](../src\page\user\company\companylist.jsx) | JavaScript JSX | 101 | 0 | 14 | 115 | 0.00% |
-| [page\user\company\department.jsx](../src\page\user\company\department.jsx) | JavaScript JSX | 130 | 0 | 10 | 140 | 0.00% |
+| [page\user\company\department.jsx](../src\page\user\company\department.jsx) | JavaScript JSX | 133 | 0 | 9 | 142 | 0.00% |
 | [page\user\company\index.jsx](../src\page\user\company\index.jsx) | JavaScript JSX | 27 | 0 | 0 | 27 | 0.00% |
 | [page\user\company\job.jsx](../src\page\user\company\job.jsx) | JavaScript JSX | 118 | 0 | 8 | 126 | 0.00% |
 | [page\user\company\my_application.jsx](../src\page\user\company\my_application.jsx) | JavaScript JSX | 32 | 0 | 1 | 33 | 0.00% |
-| [page\user\index.jsx](../src\page\user\index.jsx) | JavaScript JSX | 50 | 0 | 4 | 54 | 0.00% |
+| [page\user\index.jsx](../src\page\user\index.jsx) | JavaScript JSX | 56 | 0 | 4 | 60 | 0.00% |
+| [page\user\information\index.jsx](../src\page\user\information\index.jsx) | JavaScript JSX | 26 | 0 | 0 | 26 | 0.00% |
+| [page\user\information\polciy\detail.jsx](../src\page\user\information\polciy\detail.jsx) | JavaScript JSX | 116 | 0 | 8 | 124 | 0.00% |
+| [page\user\information\polciy\index.jsx](../src\page\user\information\polciy\index.jsx) | JavaScript JSX | 122 | 0 | 8 | 130 | 0.00% |
+| [page\user\information\product\detail.jsx](../src\page\user\information\product\detail.jsx) | JavaScript JSX | 128 | 0 | 7 | 135 | 0.00% |
+| [page\user\information\product\index.jsx](../src\page\user\information\product\index.jsx) | JavaScript JSX | 84 | 0 | 1 | 85 | 0.00% |
+| [page\user\information\product\person-center.jsx](../src\page\user\information\product\person-center.jsx) | JavaScript JSX | 10 | 0 | 1 | 11 | 0.00% |
+| [page\user\information\product\select.jsx](../src\page\user\information\product\select.jsx) | JavaScript JSX | 105 | 0 | 6 | 111 | 0.00% |
 | [page\user\login\index.jsx](../src\page\user\login\index.jsx) | JavaScript JSX | 14 | 0 | 0 | 14 | 0.00% |
 | [page\user\login\login.jsx](../src\page\user\login\login.jsx) | JavaScript JSX | 75 | 0 | 0 | 75 | 0.00% |
 | [page\user\login\regiser.jsx](../src\page\user\login\regiser.jsx) | JavaScript JSX | 68 | 0 | 1 | 69 | 0.00% |
-| [router\index.jsx](../src\router\index.jsx) | JavaScript JSX | 234 | 0 | 1 | 235 | 0.00% |
+| [router\index.jsx](../src\router\index.jsx) | JavaScript JSX | 302 | 0 | 1 | 303 | 0.00% |
 | [store\usestore.jsx](../src\store\usestore.jsx) | JavaScript JSX | 24 | 0 | 0 | 24 | 0.00% |
 | [ulits\config.js](../src\ulits\config.js) | JavaScript | 2 | 0 | 1 | 3 | 0.00% |
 | [ulits\content.jsx](../src\ulits\content.jsx) | JavaScript JSX | 3 | 0 | 0 | 3 | 0.00% |
-| [ulits\request.js](../src\ulits\request.js) | JavaScript | 22 | 6 | 2 | 30 | 21.43% |
+| [ulits\request.js](../src\ulits\request.js) | JavaScript | 23 | 6 | 2 | 31 | 20.69% |
 | [ulits\tool.js](../src\ulits\tool.js) | JavaScript | 36 | 0 | 0 | 36 | 0.00% |
 
 [summary](results.md)

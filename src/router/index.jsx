@@ -24,6 +24,9 @@ const Achievement = lazy(()=>import('../page/user/college/various/achievement'))
 const Main_Information = lazy(()=>import('../page/user/information/index'));
 const Policy = lazy(()=>import('../page/user/information/polciy/index'));
 const Detail_Policy = lazy(()=>import('../page/user/information/polciy/detail'));
+const Product = lazy(()=>import('../page/user/information/product/index'));
+const ProductDetail = lazy(()=>import('../page/user/information/product/detail'));
+const ProductPersonCenter = lazy(()=>import('../page/user/information/product/person-center'));
 const router =[
     {
         path:'/',
@@ -147,7 +150,37 @@ const router =[
                                 <Detail_Policy/>
                             </Suspense>
                         )
-                    }
+                    },
+                    {
+                        path:'product',
+                        element:(
+                            <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
+                                <Spin/>
+                            </div>}>
+                                <Product/>
+                            </Suspense>
+                        )
+                    },
+                    {
+                        path:'product/:id',
+                        element:(
+                            <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
+                                <Spin/>
+                            </div>}>
+                                <ProductDetail/>
+                            </Suspense>
+                        )
+                    },
+                    {
+                        path:'product_person-center',
+                        element:(
+                            <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
+                                <Spin/>
+                            </div>}>
+                                <ProductPersonCenter/>
+                            </Suspense>
+                        )
+                    },
                 ]
             },
             {
