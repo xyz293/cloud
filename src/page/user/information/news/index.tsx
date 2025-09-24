@@ -2,7 +2,9 @@ import { getNewsList, getNewstags ,NewsTags,Search} from '../../../../API/news'
 import { News, Tags} from '../../../../type/news';
 import { useEffect, useState } from 'react';
 import { Button, Input } from 'antd';
+import {useNavigate} from 'react-router-dom'
 const New = () => {
+    const navigate = useNavigate();
   const [newsList, setNewsList] = useState<News[]>([]);
   const [tags, setTags] = useState<Tags[]>([]);
    const [inputValue, setInputValue] = useState<string>('');
@@ -168,6 +170,9 @@ const New = () => {
                         </div>
                         <div>
                     <Button  size='small'
+                    onClick={()=>{
+                        navigate(`/user/information/news/${item.id}`)
+                    }}
                       onMouseEnter ={e=>{
                         e.currentTarget.style.transform="translateY(-3px)";
                         e.currentTarget.style.boxShadow = "0 6px 16px rgba(0,0,0,0.2)";

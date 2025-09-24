@@ -27,3 +27,6 @@ export const Search = (key:string)=>{
         key
     });
 }
+export const getDetail =(id:number)=>{
+    return request.get(`/news/detail/${id}`);
+}

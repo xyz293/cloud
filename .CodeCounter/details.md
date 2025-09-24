@@ -1,10 +1,10 @@
 # Details
 
-Date : 2025-09-22 20:13:12
+Date : 2025-09-24 13:58:05
 
 Directory : ./src
 
-Total : 55 files,  3392 codes, 8 comments, 161 blanks, all 3561 lines, 0.24% comment rate
+Total : 62 files,  3842 codes, 8 comments, 188 blanks, all 4038 lines, 0.21% comment rate
 
 [summary](results.md)
 
@@ -19,8 +19,9 @@ Total : 55 files,  3392 codes, 8 comments, 161 blanks, all 3561 lines, 0.24% com
 | [API\department.js](../src\API\department.js) | JavaScript | 20 | 0 | 0 | 20 | 0.00% |
 | [API\information_tags.js](../src\API\information_tags.js) | JavaScript | 7 | 0 | 0 | 7 | 0.00% |
 | [API\job.js](../src\API\job.js) | JavaScript | 38 | 0 | 0 | 38 | 0.00% |
+| [API\news.ts](../src\API\news.ts) | TypeScript | 28 | 0 | 4 | 32 | 0.00% |
 | [API\policy.js](../src\API\policy.js) | JavaScript | 56 | 0 | 1 | 57 | 0.00% |
-| [API\product.js](../src\API\product.js) | JavaScript | 92 | 0 | 1 | 93 | 0.00% |
+| [API\product.js](../src\API\product.js) | JavaScript | 104 | 0 | 0 | 104 | 0.00% |
 | [API\province.js](../src\API\province.js) | JavaScript | 7 | 0 | 0 | 7 | 0.00% |
 | [API\school_category.js](../src\API\school_category.js) | JavaScript | 7 | 0 | 0 | 7 | 0.00% |
 | [API\university.js](../src\API\university.js) | JavaScript | 69 | 0 | 2 | 71 | 0.00% |
@@ -51,17 +52,23 @@ Total : 55 files,  3392 codes, 8 comments, 161 blanks, all 3561 lines, 0.24% com
 | [page\user\company\my_application.jsx](../src\page\user\company\my_application.jsx) | JavaScript JSX | 32 | 0 | 1 | 33 | 0.00% |
 | [page\user\index.jsx](../src\page\user\index.jsx) | JavaScript JSX | 56 | 0 | 4 | 60 | 0.00% |
 | [page\user\information\index.jsx](../src\page\user\information\index.jsx) | JavaScript JSX | 26 | 0 | 0 | 26 | 0.00% |
+| [page\user\information\news\detail.tsx](../src\page\user\information\news\detail.tsx) | TypeScript JSX | 127 | 0 | 10 | 137 | 0.00% |
+| [page\user\information\news\index.tsx](../src\page\user\information\news\index.tsx) | TypeScript JSX | 190 | 0 | 13 | 203 | 0.00% |
+| [page\user\information\person\favoirte.tsx](../src\page\user\information\person\favoirte.tsx) | TypeScript JSX | 8 | 0 | 0 | 8 | 0.00% |
+| [page\user\information\person\order.tsx](../src\page\user\information\person\order.tsx) | TypeScript JSX | 13 | 0 | 0 | 13 | 0.00% |
+| [page\user\information\person\person-center.jsx](../src\page\user\information\person\person-center.jsx) | JavaScript JSX | 32 | 0 | 2 | 34 | 0.00% |
 | [page\user\information\polciy\detail.jsx](../src\page\user\information\polciy\detail.jsx) | JavaScript JSX | 116 | 0 | 8 | 124 | 0.00% |
 | [page\user\information\polciy\index.jsx](../src\page\user\information\polciy\index.jsx) | JavaScript JSX | 122 | 0 | 8 | 130 | 0.00% |
 | [page\user\information\product\detail.jsx](../src\page\user\information\product\detail.jsx) | JavaScript JSX | 128 | 0 | 7 | 135 | 0.00% |
-| [page\user\information\product\index.jsx](../src\page\user\information\product\index.jsx) | JavaScript JSX | 84 | 0 | 1 | 85 | 0.00% |
-| [page\user\information\product\person-center.jsx](../src\page\user\information\product\person-center.jsx) | JavaScript JSX | 10 | 0 | 1 | 11 | 0.00% |
+| [page\user\information\product\index.jsx](../src\page\user\information\product\index.jsx) | JavaScript JSX | 85 | 0 | 1 | 86 | 0.00% |
 | [page\user\information\product\select.jsx](../src\page\user\information\product\select.jsx) | JavaScript JSX | 105 | 0 | 6 | 111 | 0.00% |
 | [page\user\login\index.jsx](../src\page\user\login\index.jsx) | JavaScript JSX | 14 | 0 | 0 | 14 | 0.00% |
 | [page\user\login\login.jsx](../src\page\user\login\login.jsx) | JavaScript JSX | 75 | 0 | 0 | 75 | 0.00% |
 | [page\user\login\regiser.jsx](../src\page\user\login\regiser.jsx) | JavaScript JSX | 68 | 0 | 1 | 69 | 0.00% |
-| [router\index.jsx](../src\router\index.jsx) | JavaScript JSX | 302 | 0 | 1 | 303 | 0.00% |
+| [router\index.jsx](../src\router\index.jsx) | JavaScript JSX | 324 | 0 | 1 | 325 | 0.00% |
 | [store\usestore.jsx](../src\store\usestore.jsx) | JavaScript JSX | 24 | 0 | 0 | 24 | 0.00% |
+| [type\news\index.ts](../src\type\news\index.ts) | TypeScript | 13 | 0 | 0 | 13 | 0.00% |
+| [type\person_center\index.ts](../src\type\person_center\index.ts) | TypeScript | 14 | 0 | 0 | 14 | 0.00% |
 | [ulits\config.js](../src\ulits\config.js) | JavaScript | 2 | 0 | 1 | 3 | 0.00% |
 | [ulits\content.jsx](../src\ulits\content.jsx) | JavaScript JSX | 3 | 0 | 0 | 3 | 0.00% |
 | [ulits\request.js](../src\ulits\request.js) | JavaScript | 23 | 6 | 2 | 31 | 20.69% |

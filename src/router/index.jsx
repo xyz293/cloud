@@ -26,7 +26,7 @@ const Policy = lazy(()=>import('../page/user/information/polciy/index'));
 const Detail_Policy = lazy(()=>import('../page/user/information/polciy/detail'));
 const Product = lazy(()=>import('../page/user/information/product/index'));
 const ProductDetail = lazy(()=>import('../page/user/information/product/detail'));
-const ProductPersonCenter = lazy(()=>import('../page/user/information/person-center'));
+const ProductPersonCenter = lazy(()=>import('../page/user/information/person/person-center'));
 const News = lazy(()=>import('../page/user/information/news/index'));
 const NewsDetail = lazy(()=>import('../page/user/information/news/detail'));
 const router =[
