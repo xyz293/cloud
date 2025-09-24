@@ -13,7 +13,7 @@ const Information = () => {
         <div style={{display:'flex',flexDirection:'column',gap:'30px'}}>
             <div style={{display:'flex',justifyContent:'center',gap:'50px'}}>
                 <Button type="primary" onClick={()=>navigate('product')}>商场中心</Button>
-                <Button type='primary'>新闻中心</Button>
+                <Button type='primary' onClick={()=>navigate('news')}>新闻中心</Button>
                 <Button type='primary' onClick={()=>navigate('policy')}>政策中心</Button>
                 <Button type="primary" onClick={()=>navigate('product_person-center')}>个人中心</Button>
             </div>
