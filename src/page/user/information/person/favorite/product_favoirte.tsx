@@ -1,7 +1,8 @@
-const Favorite = ({favoriteList:[]}) =>{
+
+const Favorite = () =>{
     return (
         <div>
-            收藏
+            产品收藏
         </div>
     )
 }

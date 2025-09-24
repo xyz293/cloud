@@ -1,10 +1,10 @@
 # Details
 
-Date : 2025-09-24 13:58:05
+Date : 2025-09-24 21:18:42
 
 Directory : ./src
 
-Total : 62 files,  3842 codes, 8 comments, 188 blanks, all 4038 lines, 0.21% comment rate
+Total : 65 files,  4053 codes, 9 comments, 209 blanks, all 4271 lines, 0.22% comment rate
 
 [summary](results.md)
 
@@ -19,9 +19,9 @@ Total : 62 files,  3842 codes, 8 comments, 188 blanks, all 4038 lines, 0.21% com
 | [API\department.js](../src\API\department.js) | JavaScript | 20 | 0 | 0 | 20 | 0.00% |
 | [API\information_tags.js](../src\API\information_tags.js) | JavaScript | 7 | 0 | 0 | 7 | 0.00% |
 | [API\job.js](../src\API\job.js) | JavaScript | 38 | 0 | 0 | 38 | 0.00% |
-| [API\news.ts](../src\API\news.ts) | TypeScript | 28 | 0 | 4 | 32 | 0.00% |
+| [API\news.ts](../src\API\news.ts) | TypeScript | 38 | 0 | 5 | 43 | 0.00% |
 | [API\policy.js](../src\API\policy.js) | JavaScript | 56 | 0 | 1 | 57 | 0.00% |
-| [API\product.js](../src\API\product.js) | JavaScript | 104 | 0 | 0 | 104 | 0.00% |
+| [API\product.js](../src\API\product.js) | JavaScript | 113 | 0 | 1 | 114 | 0.00% |
 | [API\province.js](../src\API\province.js) | JavaScript | 7 | 0 | 0 | 7 | 0.00% |
 | [API\school_category.js](../src\API\school_category.js) | JavaScript | 7 | 0 | 0 | 7 | 0.00% |
 | [API\university.js](../src\API\university.js) | JavaScript | 69 | 0 | 2 | 71 | 0.00% |
@@ -52,11 +52,14 @@ Total : 62 files,  3842 codes, 8 comments, 188 blanks, all 4038 lines, 0.21% com
 | [page\user\company\my_application.jsx](../src\page\user\company\my_application.jsx) | JavaScript JSX | 32 | 0 | 1 | 33 | 0.00% |
 | [page\user\index.jsx](../src\page\user\index.jsx) | JavaScript JSX | 56 | 0 | 4 | 60 | 0.00% |
 | [page\user\information\index.jsx](../src\page\user\information\index.jsx) | JavaScript JSX | 26 | 0 | 0 | 26 | 0.00% |
-| [page\user\information\news\detail.tsx](../src\page\user\information\news\detail.tsx) | TypeScript JSX | 127 | 0 | 10 | 137 | 0.00% |
-| [page\user\information\news\index.tsx](../src\page\user\information\news\index.tsx) | TypeScript JSX | 190 | 0 | 13 | 203 | 0.00% |
-| [page\user\information\person\favoirte.tsx](../src\page\user\information\person\favoirte.tsx) | TypeScript JSX | 8 | 0 | 0 | 8 | 0.00% |
-| [page\user\information\person\order.tsx](../src\page\user\information\person\order.tsx) | TypeScript JSX | 13 | 0 | 0 | 13 | 0.00% |
-| [page\user\information\person\person-center.jsx](../src\page\user\information\person\person-center.jsx) | JavaScript JSX | 32 | 0 | 2 | 34 | 0.00% |
+| [page\user\information\news\detail.tsx](../src\page\user\information\news\detail.tsx) | TypeScript JSX | 144 | 0 | 8 | 152 | 0.00% |
+| [page\user\information\news\index.tsx](../src\page\user\information\news\index.tsx) | TypeScript JSX | 191 | 0 | 13 | 204 | 0.00% |
+| [page\user\information\person\favorite\index.tsx](../src\page\user\information\person\favorite\index.tsx) | TypeScript JSX | 20 | 0 | 4 | 24 | 0.00% |
+| [page\user\information\person\favorite\new_faorite.tsx](../src\page\user\information\person\favorite\new_faorite.tsx) | TypeScript JSX | 8 | 0 | 0 | 8 | 0.00% |
+| [page\user\information\person\favorite\product_favoirte.tsx](../src\page\user\information\person\favorite\product_favoirte.tsx) | TypeScript JSX | 8 | 0 | 1 | 9 | 0.00% |
+| [page\user\information\person\order\index.tsx](../src\page\user\information\person\order\index.tsx) | TypeScript JSX | 95 | 0 | 8 | 103 | 0.00% |
+| [page\user\information\person\order\product_order.tsx](../src\page\user\information\person\order\product_order.tsx) | TypeScript JSX | 8 | 0 | 1 | 9 | 0.00% |
+| [page\user\information\person\person-center.jsx](../src\page\user\information\person\person-center.jsx) | JavaScript JSX | 80 | 1 | 9 | 90 | 1.23% |
 | [page\user\information\polciy\detail.jsx](../src\page\user\information\polciy\detail.jsx) | JavaScript JSX | 116 | 0 | 8 | 124 | 0.00% |
 | [page\user\information\polciy\index.jsx](../src\page\user\information\polciy\index.jsx) | JavaScript JSX | 122 | 0 | 8 | 130 | 0.00% |
 | [page\user\information\product\detail.jsx](../src\page\user\information\product\detail.jsx) | JavaScript JSX | 128 | 0 | 7 | 135 | 0.00% |
@@ -68,7 +71,7 @@ Total : 62 files,  3842 codes, 8 comments, 188 blanks, all 4038 lines, 0.21% com
 | [router\index.jsx](../src\router\index.jsx) | JavaScript JSX | 324 | 0 | 1 | 325 | 0.00% |
 | [store\usestore.jsx](../src\store\usestore.jsx) | JavaScript JSX | 24 | 0 | 0 | 24 | 0.00% |
 | [type\news\index.ts](../src\type\news\index.ts) | TypeScript | 13 | 0 | 0 | 13 | 0.00% |
-| [type\person_center\index.ts](../src\type\person_center\index.ts) | TypeScript | 14 | 0 | 0 | 14 | 0.00% |
+| [type\person_center\index.ts](../src\type\person_center\index.ts) | TypeScript | 22 | 0 | 0 | 22 | 0.00% |
 | [ulits\config.js](../src\ulits\config.js) | JavaScript | 2 | 0 | 1 | 3 | 0.00% |
 | [ulits\content.jsx](../src\ulits\content.jsx) | JavaScript JSX | 3 | 0 | 0 | 3 | 0.00% |
 | [ulits\request.js](../src\ulits\request.js) | JavaScript | 23 | 6 | 2 | 31 | 20.69% |

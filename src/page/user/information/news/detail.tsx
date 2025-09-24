@@ -1,21 +1,30 @@
 import { useParams } from 'react-router-dom'
-import { getDetail } from '../../../../API/news'
+import { getDetail,create_favorite } from '../../../../API/news'
 import { News } from '../../../../type/news/index'
 import { useEffect, useState } from 'react'
 import { Button } from 'antd'
-
+import {getId} from '../../../../ulits/tool'
 const Detail = () => {
   const params = useParams()
   const id = params.id
   const [detail_id, setDetail_id] = useState<number>(id ? Number(id) : 0)
-  const [newsDetail, setNewsDetail] = useState<News | null>(null)
+  const [newsDetail, setNewsDetail] = useState<News>({
+     id:0,
+    title:'',
+    content:'',
+    author:'',
+    category:'',
+    image_url:'',
+    publish_time:'',
+  })
   const [prev, setPrev] = useState<boolean>(true)
   const [next, setNext] = useState<boolean>(true)
-
+  const user_id = getId();
   useEffect(() => {
     setPrev(detail_id > 1)
     console.log(detail_id);
     getDetail(detail_id).then((res: any) => {
+      console.log(res);
       setNewsDetail(res.data.data)
     })
   }, [detail_id])
@@ -126,6 +135,12 @@ const Detail = () => {
         </Button>
         <div style={{display:'flex',justifyContent:'flex-end',alignItems:'center',fontSize:'0.75rem',color:'#999'}}>
        <Button onClick={()=>{
+        create_favorite(user_id,detail_id,newsDetail?.title,newsDetail?.category,newsDetail?.content,newsDetail?.image_url).then((res:any)=>{
+          console.log(res);
+          if(res.data.code===200){
+          alert('收藏成功');
+          }
+        })
        }}>收藏</Button>
       </div>
       </div>

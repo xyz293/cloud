@@ -15,7 +15,7 @@ const Information = () => {
                 <Button type="primary" onClick={()=>navigate('product')}>商场中心</Button>
                 <Button type='primary' onClick={()=>navigate('news')}>新闻中心</Button>
                 <Button type='primary' onClick={()=>navigate('policy')}>政策中心</Button>
-                <Button type="primary" onClick={()=>navigate('product_person-center')}>个人中心</Button>
+                <Button type="primary" onClick={()=>navigate('product_person-center')}>信息中心</Button>
             </div>
         <div>
             <Outlet/>

@@ -37,6 +37,7 @@ const New = () => {
              onChange={(e)=>{setInputValue(e.target.value)}}
              />
              <Button 
+             size='large'
                 onMouseEnter ={e=>{
                         e.currentTarget.style.transform="translateY(-3px)";
                         e.currentTarget.style.boxShadow = "0 6px 16px rgba(0,0,0,0.2)";
@@ -169,7 +170,7 @@ const New = () => {
                         {item.category}</Button>
                         </div>
                         <div>
-                    <Button  size='small'
+                    <Button  size='middle'
                     onClick={()=>{
                         navigate(`/user/information/news/${item.id}`)
                     }}

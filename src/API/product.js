@@ -102,3 +102,12 @@ export const getOrderlist = (user_id) => {
         method: 'get',
     })
 }
+export const deleteOrder = (id) => {
+    return request({
+        url: `/center/del_order/${id}`,
+        method: 'delete',
+    })
+}
+export const getNewsFavoriteList = (user_id)=>{
+    return request.get(`/news/get_favorite/${user_id}`);
+}
