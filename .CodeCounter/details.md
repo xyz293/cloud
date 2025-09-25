@@ -1,10 +1,10 @@
 # Details
 
-Date : 2025-09-24 21:18:42
+Date : 2025-09-25 13:07:22
 
 Directory : ./src
 
-Total : 65 files,  4053 codes, 9 comments, 209 blanks, all 4271 lines, 0.22% comment rate
+Total : 65 files,  4062 codes, 9 comments, 209 blanks, all 4280 lines, 0.22% comment rate
 
 [summary](results.md)
 
@@ -74,7 +74,7 @@ Total : 65 files,  4053 codes, 9 comments, 209 blanks, all 4271 lines, 0.22% com
 | [type\person_center\index.ts](../src\type\person_center\index.ts) | TypeScript | 22 | 0 | 0 | 22 | 0.00% |
 | [ulits\config.js](../src\ulits\config.js) | JavaScript | 2 | 0 | 1 | 3 | 0.00% |
 | [ulits\content.jsx](../src\ulits\content.jsx) | JavaScript JSX | 3 | 0 | 0 | 3 | 0.00% |
-| [ulits\request.js](../src\ulits\request.js) | JavaScript | 23 | 6 | 2 | 31 | 20.69% |
+| [ulits\request.js](../src\ulits\request.js) | JavaScript | 32 | 6 | 2 | 40 | 15.79% |
 | [ulits\tool.js](../src\ulits\tool.js) | JavaScript | 36 | 0 | 0 | 36 | 0.00% |
 
 [summary](results.md)

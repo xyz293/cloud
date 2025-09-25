@@ -1,11 +1,14 @@
 import {Outlet} from 'react-router-dom';
-import {useNavigate} from 'react-router-dom';
+import {useNavigate,useLocation} from 'react-router-dom';
 import {useEffect} from 'react'
 import {Button} from 'antd';
 const Company = () => {
     const navigate = useNavigate();
+    const location = useLocation();
     useEffect(()=>{
-        navigate('companylist');
+        if(location.pathname==='/user/company'){
+             navigate('companylist');
+        }
     },[])
     return (
         <div style={{display:'flex',flexDirection:'column', gap:'30px'}}>
