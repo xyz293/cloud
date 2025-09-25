@@ -41,3 +41,10 @@ export const create_favorite = (user_id:number,news_id:number,news_title:string,
         cover_url:cover_url
     })
 }
+export const delete_Orderfavorite = (id:number)=>{
+    return request.delete(`/center/del_favorite/${id}`)
+}
+
+export const DeleteNewsFavorite = (id:number,user_id:number)=>{
+    return request.delete(`/news/delete_favorite/${id}/${user_id}`)
+}

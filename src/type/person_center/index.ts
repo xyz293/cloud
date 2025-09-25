@@ -8,15 +8,17 @@ export interface Order{
     create_time:string;
 }
 export interface Favoriteorder{
+    id:number;
     product_id:number;
    product_name:string;
    product_price:number;
-   create_time:string;
+   created_at:string;
 }
 export interface NewsFavoriteorder{
     news_id:number;
     news_title:string;
     content:string;
     category:string;
-    image_url:string;
+    cover_url:string;
+    create_time:string;
 }

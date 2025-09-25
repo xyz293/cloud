@@ -1,15 +1,25 @@
 import {getProductlist,product_search} from '../../../../API/product'
-import {useEffect,useState,useCallback} from 'react'
+import {useEffect,useState,useCallback,useRef} from 'react'
 import {Modal,Input,Button} from 'antd';
 import {useNavigate} from 'react-router-dom';
 import Select from './select';
 const Product = () => {
     const [productList,setProductList] = useState([]);
     const [isshow,setIsShow] = useState(false);
+    const [index,setIndex] = useState(0);
     const show = useCallback(()=>{
       setIsShow(prev=>!prev);
     },[])
+    const scrollRef = useRef(null);
     const navigate = useNavigate();
+    const handleSroll = ()=>{
+      if(scrollRef.current){
+        console.log(scrollRef.current.scrollTop)
+      }
+      let i = Math.floor(scrollRef.current.scrollTop / 200);
+      setIndex(i);
+      console.log(i)
+    }
     const setdata = useCallback((data)=>{
       setProductList(data);
     },[])
@@ -21,6 +31,8 @@ const Product = () => {
         setProductList(productList?.data?.data || []);
        })
     },[])
+    const value =Math.floor(700/200)
+    const list = productList.slice(index , index+value);
   return (
     <div>
       <div style={{display:'flex',justifyContent:'center',gap:'14px'}}>
@@ -36,16 +48,17 @@ const Product = () => {
           <Select show={show} setdata={setdata} />
         </Modal>
       </div>
-   <div style={{display:'flex',flexWrap:'wrap',gap:'20px',alignItems:'flex-start',width:'100%', justifyContent:'space-between',padding:'10px'}}>
-  {productList?.map((item) => (
+   <div ref={scrollRef} style={{display:'flex',gap:'20px',alignItems:'center',width:'700px', height:'700px', flexDirection:'column',overflowY:'auto'}} onScroll={handleSroll}>
+    <div style={{height:300*productList.length}}>
+       {list?.map((item,idx) => (
     <div 
       key={item.id} 
       style={{
         display:'flex',
         flexDirection:'column',
         padding:'10px',
-        gap:'10px',
-        width:'340px',
+        width:'500px',
+        height:'300px',
         borderRadius:'12px',
         backgroundColor:'#fdfdfd', // 卡片背景
         boxShadow:'0 4px 12px rgba(0,0,0,0.1)', // 阴影
@@ -58,7 +71,7 @@ const Product = () => {
         <img 
           src={item.image} 
           alt={item.name} 
-          style={{width:'100%', height:'100%', objectFit:'cover'}} 
+          style={{width:'300px', height:'auto', objectFit:'cover'}} 
         />
       </div>
       <div style={{display:'flex',flexDirection:'column',gap:'6px'}}>
@@ -78,6 +91,7 @@ const Product = () => {
       </div>
     </div>
   ))}
+    </div>
 </div>
 
     </div>

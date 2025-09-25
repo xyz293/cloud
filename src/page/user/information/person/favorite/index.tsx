@@ -11,9 +11,9 @@ const MainFavorite = ({ favoriteList, newsFavoriteList, showid }: MainFavoritePr
   const show = () => {
     switch (showid) {
       case 1:
-        return <ProductFavorite />;
+        return <ProductFavorite favoriteList={favoriteList} />;
       case 3:
-        return <NewFavorite />;
+        return <NewFavorite newsFavoriteList={newsFavoriteList} />;
     }
   };
 

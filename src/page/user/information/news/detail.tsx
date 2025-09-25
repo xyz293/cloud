@@ -135,7 +135,7 @@ const Detail = () => {
         </Button>
         <div style={{display:'flex',justifyContent:'flex-end',alignItems:'center',fontSize:'0.75rem',color:'#999'}}>
        <Button onClick={()=>{
-        create_favorite(user_id,detail_id,newsDetail?.title,newsDetail?.category,newsDetail?.content,newsDetail?.image_url).then((res:any)=>{
+        create_favorite(user_id,detail_id,newsDetail?.title,newsDetail?.category,newsDetail?.content.slice(0,60),newsDetail?.image_url).then((res:any)=>{
           console.log(res);
           if(res.data.code===200){
           alert('收藏成功');

@@ -1,10 +1,10 @@
 # Details
 
-Date : 2025-09-25 13:07:22
+Date : 2025-09-25 16:04:29
 
 Directory : ./src
 
-Total : 65 files,  4062 codes, 9 comments, 209 blanks, all 4280 lines, 0.22% comment rate
+Total : 65 files,  4099 codes, 10 comments, 209 blanks, all 4318 lines, 0.24% comment rate
 
 [summary](results.md)
 
@@ -45,9 +45,9 @@ Total : 65 files,  4062 codes, 9 comments, 209 blanks, all 4280 lines, 0.22% com
 | [page\user\college\verification.jsx](../src\page\user\college\verification.jsx) | JavaScript JSX | 112 | 0 | 4 | 116 | 0.00% |
 | [page\user\company\application.jsx](../src\page\user\company\application.jsx) | JavaScript JSX | 175 | 0 | 9 | 184 | 0.00% |
 | [page\user\company\company_detail.jsx](../src\page\user\company\company_detail.jsx) | JavaScript JSX | 84 | 0 | 7 | 91 | 0.00% |
-| [page\user\company\companylist.jsx](../src\page\user\company\companylist.jsx) | JavaScript JSX | 101 | 0 | 14 | 115 | 0.00% |
+| [page\user\company\companylist.jsx](../src\page\user\company\companylist.jsx) | JavaScript JSX | 132 | 1 | 14 | 147 | 0.75% |
 | [page\user\company\department.jsx](../src\page\user\company\department.jsx) | JavaScript JSX | 133 | 0 | 9 | 142 | 0.00% |
-| [page\user\company\index.jsx](../src\page\user\company\index.jsx) | JavaScript JSX | 27 | 0 | 0 | 27 | 0.00% |
+| [page\user\company\index.jsx](../src\page\user\company\index.jsx) | JavaScript JSX | 30 | 0 | 0 | 30 | 0.00% |
 | [page\user\company\job.jsx](../src\page\user\company\job.jsx) | JavaScript JSX | 118 | 0 | 8 | 126 | 0.00% |
 | [page\user\company\my_application.jsx](../src\page\user\company\my_application.jsx) | JavaScript JSX | 32 | 0 | 1 | 33 | 0.00% |
 | [page\user\index.jsx](../src\page\user\index.jsx) | JavaScript JSX | 56 | 0 | 4 | 60 | 0.00% |
@@ -74,7 +74,7 @@ Total : 65 files,  4062 codes, 9 comments, 209 blanks, all 4280 lines, 0.22% com
 | [type\person_center\index.ts](../src\type\person_center\index.ts) | TypeScript | 22 | 0 | 0 | 22 | 0.00% |
 | [ulits\config.js](../src\ulits\config.js) | JavaScript | 2 | 0 | 1 | 3 | 0.00% |
 | [ulits\content.jsx](../src\ulits\content.jsx) | JavaScript JSX | 3 | 0 | 0 | 3 | 0.00% |
-| [ulits\request.js](../src\ulits\request.js) | JavaScript | 32 | 6 | 2 | 40 | 15.79% |
+| [ulits\request.js](../src\ulits\request.js) | JavaScript | 35 | 6 | 2 | 43 | 14.63% |
 | [ulits\tool.js](../src\ulits\tool.js) | JavaScript | 36 | 0 | 0 | 36 | 0.00% |
 
 [summary](results.md)

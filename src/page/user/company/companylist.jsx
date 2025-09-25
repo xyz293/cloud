@@ -30,7 +30,9 @@ const Companylist = () => {
   };
 
   const handleSearch = async () => {
+    if (!key) return;
     const res = await Search(key);
+    console.log(res);
     setCompanylist(res.data.data || []);
     setStartIndex(0);
     if (scrollRef.current) scrollRef.current.scrollTop = 0;
@@ -83,7 +85,7 @@ const Companylist = () => {
         style={{
           height: `${CONTAINER_HEIGHT}px`,
           overflowY: 'auto',
-          position: 'relative',
+          position: 'sticky',
           border: '1px solid #ccc',
           borderRadius: 12,
         }}

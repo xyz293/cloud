@@ -55,9 +55,9 @@ const Application = ({ info,setisshow }) => {
          let item =file[i]
         const formData = new FormData();
         formData.append('totalChunks', file.length);
-      formData.append('index', i);
-      formData.append('hash', hash);
-      formData.append('file', item);
+        formData.append('index', i);
+        formData.append('hash', hash);
+        formData.append('file', item);
          await chuncks(formData)
        }
     }
