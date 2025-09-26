@@ -85,13 +85,13 @@ const Companylist = () => {
         style={{
           height: `${CONTAINER_HEIGHT}px`,
           overflowY: 'auto',
-          position: 'sticky',
+          position: 'relative',
           border: '1px solid #ccc',
           borderRadius: 12,
         }}
       >
         {/* 占位总高度 */}
-        <div style={{ height: companylist.length * ITEM_HEIGHT, position: 'relative' }}>
+        <div style={{ height: companylist.length * ITEM_HEIGHT }}>
           {visibleList.map((item, idx) => (
             <div
               key={item.id}
