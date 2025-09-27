@@ -9,7 +9,7 @@ const loginGuard = ({children,meta}) => {
             alert('请先登录')
             navigate('/login')
         }
-     },[meta?.auth])
+     },[])
      return  (
         children
      ) //放行

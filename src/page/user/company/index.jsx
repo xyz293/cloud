@@ -20,7 +20,7 @@ const Company = () => {
             navigate('companylist');
            }} >企业列表</Button>
            <Button type ='link' onClick={()=>{
-            navigate('my_application');
+            navigate('/user/company/my_application');
            }} >我的申请</Button>
             </div>
             <Outlet/>

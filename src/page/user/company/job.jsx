@@ -1,11 +1,16 @@
 import { getJoblist, searchJob } from '../../../API/job'
 import { useEffect, useState } from 'react'
 import { Button, Input, Modal, Card, Tag } from 'antd'
+import {getId,getUsername} from '../../../ulits/tool'
 import Application from './application'
+
+//department_id
 
 const Job = () => {
   const [jobList, setJobList] = useState([])
   const [isshow, setisshow] = useState(false)
+  const userid = getId();
+  const username = getUsername();
   const [info, setInfo] = useState({
     job_id: '',
     company_id: '',
@@ -15,6 +20,7 @@ const Job = () => {
 
   const show = async (key) => {
     const res = await searchJob(key)
+    console.log(res)
     if (res.data.code === 200) {
       setJobList(res.data.data)
     }
@@ -22,6 +28,7 @@ const Job = () => {
 
   useEffect(() => {
     getJoblist().then((res) => {
+      console.log(res)
       setJobList(res.data.data)
     })
   }, [])
@@ -104,6 +111,7 @@ const Job = () => {
                 block
                 shape="round"
                 onClick={() => {
+                  
                   setisshow(true)
                   setInfo({
                     job_id: item.id,

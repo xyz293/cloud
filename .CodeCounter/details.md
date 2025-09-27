@@ -1,10 +1,10 @@
 # Details
 
-Date : 2025-09-27 15:44:03
+Date : 2025-09-27 17:18:52
 
 Directory : ./src
 
-Total : 67 files,  4326 codes, 10 comments, 224 blanks, all 4560 lines, 0.23% comment rate
+Total : 71 files,  4387 codes, 10 comments, 230 blanks, all 4627 lines, 0.23% comment rate
 
 [summary](results.md)
 
@@ -19,11 +19,13 @@ Total : 67 files,  4326 codes, 10 comments, 224 blanks, all 4560 lines, 0.23% co
 | [API\department.js](../src\API\department.js) | JavaScript | 20 | 0 | 0 | 20 | 0.00% |
 | [API\information_tags.js](../src\API\information_tags.js) | JavaScript | 7 | 0 | 0 | 7 | 0.00% |
 | [API\job.js](../src\API\job.js) | JavaScript | 38 | 0 | 0 | 38 | 0.00% |
+| [API\message.ts](../src\API\message.ts) | TypeScript | 16 | 0 | 3 | 19 | 0.00% |
 | [API\news.ts](../src\API\news.ts) | TypeScript | 44 | 0 | 6 | 50 | 0.00% |
 | [API\policy.js](../src\API\policy.js) | JavaScript | 56 | 0 | 1 | 57 | 0.00% |
 | [API\product.js](../src\API\product.js) | JavaScript | 113 | 0 | 1 | 114 | 0.00% |
 | [API\province.js](../src\API\province.js) | JavaScript | 7 | 0 | 0 | 7 | 0.00% |
 | [API\school_category.js](../src\API\school_category.js) | JavaScript | 7 | 0 | 0 | 7 | 0.00% |
+| [API\sse.ts](../src\API\sse.ts) | TypeScript | 10 | 0 | 1 | 11 | 0.00% |
 | [API\university.js](../src\API\university.js) | JavaScript | 69 | 0 | 2 | 71 | 0.00% |
 | [API\upload.js](../src\API\upload.js) | JavaScript | 15 | 0 | 0 | 15 | 0.00% |
 | [API\user.js](../src\API\user.js) | JavaScript | 34 | 0 | 0 | 34 | 0.00% |
@@ -49,7 +51,8 @@ Total : 67 files,  4326 codes, 10 comments, 224 blanks, all 4560 lines, 0.23% co
 | [page\user\company\department.jsx](../src\page\user\company\department.jsx) | JavaScript JSX | 133 | 0 | 9 | 142 | 0.00% |
 | [page\user\company\index.jsx](../src\page\user\company\index.jsx) | JavaScript JSX | 30 | 0 | 0 | 30 | 0.00% |
 | [page\user\company\job.jsx](../src\page\user\company\job.jsx) | JavaScript JSX | 118 | 0 | 8 | 126 | 0.00% |
-| [page\user\company\my_application.jsx](../src\page\user\company\my_application.jsx) | JavaScript JSX | 32 | 0 | 1 | 33 | 0.00% |
+| [page\user\company\message\my_application.jsx](../src\page\user\company\message\my_application.jsx) | JavaScript JSX | 23 | 0 | 2 | 25 | 0.00% |
+| [page\user\company\message\sse.tsx](../src\page\user\company\message\sse.tsx) | TypeScript JSX | 8 | 0 | 1 | 9 | 0.00% |
 | [page\user\index.jsx](../src\page\user\index.jsx) | JavaScript JSX | 56 | 0 | 4 | 60 | 0.00% |
 | [page\user\information\index.jsx](../src\page\user\information\index.jsx) | JavaScript JSX | 26 | 0 | 0 | 26 | 0.00% |
 | [page\user\information\news\detail.tsx](../src\page\user\information\news\detail.tsx) | TypeScript JSX | 144 | 0 | 8 | 152 | 0.00% |
@@ -68,14 +71,15 @@ Total : 67 files,  4326 codes, 10 comments, 224 blanks, all 4560 lines, 0.23% co
 | [page\user\login\index.jsx](../src\page\user\login\index.jsx) | JavaScript JSX | 14 | 0 | 0 | 14 | 0.00% |
 | [page\user\login\login.jsx](../src\page\user\login\login.jsx) | JavaScript JSX | 75 | 0 | 0 | 75 | 0.00% |
 | [page\user\login\regiser.jsx](../src\page\user\login\regiser.jsx) | JavaScript JSX | 68 | 0 | 1 | 69 | 0.00% |
-| [router\guard\login.jsx](../src\router\guard\login.jsx) | JavaScript JSX | 15 | 0 | 0 | 15 | 0.00% |
-| [router\index.jsx](../src\router\index.jsx) | JavaScript JSX | 327 | 0 | 3 | 330 | 0.00% |
+| [router\guard\login.jsx](../src\router\guard\login.jsx) | JavaScript JSX | 17 | 0 | 0 | 17 | 0.00% |
+| [router\index.jsx](../src\router\index.jsx) | JavaScript JSX | 350 | 0 | 3 | 353 | 0.00% |
 | [store\usestore.jsx](../src\store\usestore.jsx) | JavaScript JSX | 24 | 0 | 0 | 24 | 0.00% |
+| [type\message\index.ts](../src\type\message\index.ts) | TypeScript | 10 | 0 | 0 | 10 | 0.00% |
 | [type\news\index.ts](../src\type\news\index.ts) | TypeScript | 13 | 0 | 0 | 13 | 0.00% |
 | [type\person_center\index.ts](../src\type\person_center\index.ts) | TypeScript | 24 | 0 | 0 | 24 | 0.00% |
 | [ulits\config.js](../src\ulits\config.js) | JavaScript | 2 | 0 | 1 | 3 | 0.00% |
 | [ulits\content.jsx](../src\ulits\content.jsx) | JavaScript JSX | 3 | 0 | 0 | 3 | 0.00% |
-| [ulits\request.js](../src\ulits\request.js) | JavaScript | 35 | 6 | 2 | 43 | 14.63% |
+| [ulits\request.js](../src\ulits\request.js) | JavaScript | 36 | 6 | 2 | 44 | 14.29% |
 | [ulits\tool.js](../src\ulits\tool.js) | JavaScript | 36 | 0 | 0 | 36 | 0.00% |
 | [ulits\tools.ts](../src\ulits\tools.ts) | TypeScript | 6 | 0 | 1 | 7 | 0.00% |
 

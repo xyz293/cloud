@@ -13,6 +13,7 @@ request.interceptors.request.use(function (config) {
      config.signal = control.signal
      if(server.get(config.url)){
         server.get(config.url).abort()
+          alert('重复请求')
         server.delete(config.url)
      }
        server.set(config.url,control)

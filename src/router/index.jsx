@@ -10,7 +10,7 @@ const Companylist = lazy(()=>import('../page/user/company/companylist'));
 const Job = lazy(()=>import('../page/user/company/job'));
 const Company_detail = lazy(()=>import('../page/user/company/company_detail'));
 const Department = lazy(()=>import('../page/user/company/department'));
-const MyApplication = lazy(()=>import('../page/user/company/my_application'));
+const MyApplication = lazy(()=>import('../page/user/company/message/my_application'));
 const University = lazy(()=>import('../page/user/college/index'));
 const First_page = lazy(()=>import('../page/user/college/firsrt_page'));
 const Class = lazy(()=>import('../page/user/college/Class'));
@@ -30,6 +30,8 @@ const ProductDetail = lazy(()=>import('../page/user/information/product/detail')
 const ProductPersonCenter = lazy(()=>import('../page/user/information/person/person-center'));
 const News = lazy(()=>import('../page/user/information/news/index'));
 const NewsDetail = lazy(()=>import('../page/user/information/news/detail'));
+const SSE = lazy(()=>import('../page/user/company/message/sse'));
+const Admin = lazy(()=>import('../page/company/index'));
 const router =[
     {
         path:'/',
@@ -50,6 +52,17 @@ const router =[
                 element:<Register/>
             }
         ]
+    },
+    {
+        path:'/admin',
+        element:(
+            <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
+                <Spin/>
+            </div>}>
+               
+                    <Admin/>
+            </Suspense>
+        ),
     },
     {
         path:'/user',
@@ -80,6 +93,18 @@ const router =[
                                 <Spin/>
                             </div>}>
                                 <Companylist/>
+                            </Suspense>
+                        )
+                    },
+                    {
+                        path:'my_application/:id/:bossid',
+                        element:(
+                            <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
+                                <Spin/>
+                            </div>}>
+                                <LoginGuard meta={{auth:true}}>
+                                  <SSE/>
+                                </LoginGuard>
                             </Suspense>
                         )
                     },
@@ -198,7 +223,9 @@ const router =[
                             <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
                                 <Spin/>
                             </div>}>
-                                <ProductDetail/>
+                                <LoginGuard meta={{auth:true}}>
+                                    <ProductDetail/>
+                                </LoginGuard>
                             </Suspense>
                         )
                     },
@@ -300,7 +327,9 @@ const router =[
                                     <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
                                         <Spin/>
                                     </div>}>
-                                        <CourseDetail/>
+                                        <LoginGuard meta={{auth:true}}>
+                                            <CourseDetail/>
+                                        </LoginGuard>
                                     </Suspense>
                                 )
                             },
@@ -320,7 +349,9 @@ const router =[
                                     <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
                                         <Spin/>
                                     </div>}>
-                                        <Achievement/>
+                                        <LoginGuard meta={{auth:true}}>
+                                            <Achievement/>
+                                        </LoginGuard>
                                     </Suspense>
                                 )
                             },

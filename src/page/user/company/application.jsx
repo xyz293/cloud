@@ -4,7 +4,8 @@ import { applyJob } from '../../../API/application';
 import { useState } from 'react';
 import {chuncks,merge} from '../../../API/upload'
 import SparkMD5 from 'spark-md5';
-
+import {getId,getUsername} from '../../../ulits/tool'
+import {send} from './../../../API/message'
 const { Title } = Typography;
 
 const Application = ({ info,setisshow }) => {
@@ -44,7 +45,7 @@ const Application = ({ info,setisshow }) => {
              }
           })
    
-            fileReader.readAsArrayBuffer(new Blob(targets))
+          fileReader.readAsArrayBuffer(new Blob(targets))
           fileReader.onload = () => {
             spark.append(fileReader.result);
           };
@@ -163,13 +164,13 @@ const Application = ({ info,setisshow }) => {
             <Button
               type="primary"
             onClick={()=>{
-                applyJob(user).then(res=>{
-                   console.log(res)
-                   if(res.data.code === 200){
-                    alert('投递成功')
-                    setisshow(false)
-                   }
-                })
+              send(user.user_id,user.department_id,user.introduction,user.username,"boss").then(res=>{
+                console.log(res)
+                if(res.data.code === 200){
+                  alert('投递成功')
+                  setisshow(false)
+                }
+              })
             }}
             >
                 投递
