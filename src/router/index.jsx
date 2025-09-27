@@ -1,5 +1,6 @@
 import {lazy,Suspense} from 'react';
 import {Spin} from 'antd';
+import LoginGuard from './guard/login';
 const Login = lazy(()=>import('../page/user/login/login'));
 const Register = lazy(()=>import('../page/user/login/regiser'));
 const LoginMain = lazy(()=>import('../page/user/login/index'));
@@ -56,7 +57,8 @@ const router =[
             <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
                 <Spin/>
             </div>}>
-                <User/>
+               
+                    <User/>
             </Suspense>
         ),
         children:[
@@ -66,7 +68,8 @@ const router =[
                     <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
                         <Spin/>
                     </div>}>
-                        <Company/>
+                    
+                            <Company/>
                     </Suspense>
                 ),
                 children:[
@@ -159,7 +162,9 @@ const router =[
                             <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
                                 <Spin/>
                             </div>}>
-                                <NewsDetail/>
+                                <LoginGuard meta={{auth:true}}>
+                                    <NewsDetail/>
+                                </LoginGuard>
                             </Suspense>
                         )
                     },
