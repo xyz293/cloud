@@ -1,10 +1,10 @@
 # Details
 
-Date : 2025-09-25 20:38:09
+Date : 2025-09-27 15:44:03
 
 Directory : ./src
 
-Total : 66 files,  4308 codes, 10 comments, 222 blanks, all 4540 lines, 0.23% comment rate
+Total : 67 files,  4326 codes, 10 comments, 224 blanks, all 4560 lines, 0.23% comment rate
 
 [summary](results.md)
 
@@ -68,7 +68,8 @@ Total : 66 files,  4308 codes, 10 comments, 222 blanks, all 4540 lines, 0.23% co
 | [page\user\login\index.jsx](../src\page\user\login\index.jsx) | JavaScript JSX | 14 | 0 | 0 | 14 | 0.00% |
 | [page\user\login\login.jsx](../src\page\user\login\login.jsx) | JavaScript JSX | 75 | 0 | 0 | 75 | 0.00% |
 | [page\user\login\regiser.jsx](../src\page\user\login\regiser.jsx) | JavaScript JSX | 68 | 0 | 1 | 69 | 0.00% |
-| [router\index.jsx](../src\router\index.jsx) | JavaScript JSX | 324 | 0 | 1 | 325 | 0.00% |
+| [router\guard\login.jsx](../src\router\guard\login.jsx) | JavaScript JSX | 15 | 0 | 0 | 15 | 0.00% |
+| [router\index.jsx](../src\router\index.jsx) | JavaScript JSX | 327 | 0 | 3 | 330 | 0.00% |
 | [store\usestore.jsx](../src\store\usestore.jsx) | JavaScript JSX | 24 | 0 | 0 | 24 | 0.00% |
 | [type\news\index.ts](../src\type\news\index.ts) | TypeScript | 13 | 0 | 0 | 13 | 0.00% |
 | [type\person_center\index.ts](../src\type\person_center\index.ts) | TypeScript | 24 | 0 | 0 | 24 | 0.00% |

@@ -89,7 +89,9 @@ const router =[
                             <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
                                 <Spin/>
                             </div>}>
-                                <Job/>
+                                <LoginGuard meta={{auth:true}}>
+                                    <Job/>
+                                </LoginGuard>
                             </Suspense>
                         )
                     },
@@ -109,7 +111,9 @@ const router =[
                             <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh'}}>
                                 <Spin/>
                             </div>}>
-                                <Department/>
+                                <LoginGuard meta={{auth:true}}>
+                                    <Department/>
+                                </LoginGuard>
                             </Suspense>
                         )
                     },

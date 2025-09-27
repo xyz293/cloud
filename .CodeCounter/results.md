@@ -1,17 +1,17 @@
 # Summary
 
-Date : 2025-09-25 20:38:09
+Date : 2025-09-27 15:44:04
 
 Directory : ./src
 
-Total : 66 files,  4308 codes, 10 comments, 222 blanks, all 4540 lines, 0.23% comment rate
+Total : 67 files,  4326 codes, 10 comments, 224 blanks, all 4560 lines, 0.23% comment rate
 
 [details](details.md)
 
 ## Languages
 | language | files | code | comment | blank | total | comment rate |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: |
-| JavaScript JSX | 35 | 2,943 | 4 | 162 | 3,109 | 0.14% |
+| JavaScript JSX | 36 | 2,961 | 4 | 164 | 3,129 | 0.13% |
 | TypeScript JSX | 7 | 653 | 0 | 46 | 699 | 0.00% |
 | JavaScript | 19 | 624 | 6 | 7 | 637 | 0.95% |
 | TypeScript | 4 | 87 | 0 | 7 | 94 | 0.00% |
@@ -20,7 +20,7 @@ Total : 66 files,  4308 codes, 10 comments, 222 blanks, all 4540 lines, 0.23% co
 ## Directories
 | path | files | code | comment | blank | total | comment rate |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: |
-| . | 66 | 4,308 | 10 | 222 | 4,540 | 0.23% |
+| . | 67 | 4,326 | 10 | 224 | 4,560 | 0.23% |
 | API | 17 | 595 | 0 | 10 | 605 | 0.00% |
 | assets | 1 | 1 | 0 | 0 | 1 | 0.00% |
 | page | 37 | 3,226 | 4 | 203 | 3,433 | 0.12% |
@@ -36,7 +36,8 @@ Total : 66 files,  4308 codes, 10 comments, 222 blanks, all 4540 lines, 0.23% co
 | page\user\information\polciy | 2 | 238 | 0 | 16 | 254 | 0.00% |
 | page\user\information\product | 3 | 332 | 0 | 14 | 346 | 0.00% |
 | page\user\login | 3 | 157 | 0 | 1 | 158 | 0.00% |
-| router | 1 | 324 | 0 | 1 | 325 | 0.00% |
+| router | 2 | 342 | 0 | 3 | 345 | 0.00% |
+| router\guard | 1 | 15 | 0 | 0 | 15 | 0.00% |
 | store | 1 | 24 | 0 | 0 | 24 | 0.00% |
 | type | 2 | 37 | 0 | 0 | 37 | 0.00% |
 | type\news | 1 | 13 | 0 | 0 | 13 | 0.00% |

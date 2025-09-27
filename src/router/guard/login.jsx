@@ -10,6 +10,8 @@ const loginGuard = ({children,meta}) => {
             navigate('/login')
         }
      },[meta?.auth])
-     return children   //放行
+     return  (
+        children
+     ) //放行
 }
 export default loginGuard
