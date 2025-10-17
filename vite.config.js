@@ -1,9 +1,41 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import importCdn from 'vite-plugin-cdn-import'
+  //npm install vite-plugin-cdn-import -D  使用这个插件可以将第三方库放到cdn中
+
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+ plugins: [
+ 
+   react(),
+    importCdn({
+      modules: [
+        {
+          name: 'react',
+          var: 'React',
+          path: 'https://unpkg.com/react@18.2.0/umd/react.production.min.js'
+        },
+        {
+          name: 'react-dom',
+          var: 'ReactDOM',
+          path: 'https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js'
+        },
+        {
+          name: 'antd',
+          var: 'antd',
+          path: 'https://unpkg.com/antd@4.23.4/dist/antd.min.js',
+          css: 'https://unpkg.com/antd@4.23.4/dist/reset.css'
+        },
+        {
+          name: 'axios',
+          var: 'axios',
+          path: 'https://unpkg.com/axios@1.4.0/dist/axios.min.js'
+        }
+      ]
+    })
+].filter(Boolean),
+
   build:{
     rollupOptions: {
       input:{  //项目打包的入口默认是index.html
@@ -33,14 +65,6 @@ export default defineConfig({
         else {
           return "vendor"
         }
-        }
-        /*
-        5. 如果是src/ulits中的文件，就放到ulits包中
-         剩余就是其他的业务
-        */
-        if(id.includes('src/ulits')){
-          return "ulits"
-        }
       }
      }
     }
@@ -54,4 +78,4 @@ export default defineConfig({
       }
     }
   }
-})
+}})
